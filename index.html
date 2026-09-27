@@ -2,115 +2,343 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>MI BODA JULIO Y BRIGIDA</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
-    <!-- Fuente de Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Una historia de amor</title>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
+    <!-- =========================================
+         FUENTES
+    ========================================== -->
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- =========================================
+         ICONOS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- =========================================
+         CSS
+    ========================================== -->
+
+    <link rel="stylesheet"
+          href="style.css">
+
 </head>
+
 
 <body>
 
-    <!-- =====================================
-         PANTALLA DEL SOBRE
-    ====================================== -->
 
-    <section id="pantallaSobre" class="pantalla-sobre">
+    <!-- =========================================
+         MÚSICA
+    ========================================== -->
+
+    <audio id="musica" loop>
+
+        <source src="musica/cancion.mp3"
+                type="audio/mpeg">
+
+        Tu navegador no soporta audio.
+
+    </audio>
+
+
+    <!-- =========================================
+         BOTÓN DE MÚSICA
+    ========================================== -->
+
+    <button id="botonMusica"
+            class="boton-musica">
+
+        <i class="fa-solid fa-volume-high"></i>
+
+    </button>
+
+
+    <!-- =========================================
+         PANTALLA INICIAL
+         SOBRE
+    ========================================== -->
+
+    <section id="pantallaSobre"
+             class="pantalla-sobre">
+
+
+        <!-- Fondo de partículas -->
+
+        <div class="particulas"></div>
+
+
+        <!-- Anillos -->
+
+        <div class="anillos-iniciales">
+
+            <div class="anillo anillo-1"></div>
+
+            <div class="anillo anillo-2"></div>
+
+        </div>
+
+
+        <!-- Texto -->
 
         <div class="texto-sobre">
-            <p>Tenemos una invitación especial para ti</p>
+
+            <p>
+                Una historia de amor
+            </p>
+
+            <span>
+                está a punto de comenzar
+            </span>
+
         </div>
 
-        <!-- Sobre -->
-        <div id="sobre" class="sobre">
 
-            <!-- Parte trasera -->
+        <!-- SOBRE -->
+
+        <div id="sobre"
+             class="sobre">
+
+
+            <!-- Base -->
+
             <div class="sobre-base"></div>
 
+
             <!-- Carta -->
+
             <div class="carta">
-                <p>Con mucho amor</p>
-                <span>♥</span>
+
+                <div class="corazon-carta">
+                    ♥
+                </div>
+
+                <p>
+                    Con mucho amor
+                </p>
+
+                <span>
+                    J & B
+                </span>
+
             </div>
 
+
             <!-- Solapa -->
+
             <div class="solapa"></div>
 
-            <!-- Botón -->
-            <button id="abrirInvitacion" class="boton-abrir">
-                Abrir invitación
-            </button>
+
+            <!-- Decoración -->
+
+            <div class="sello">
+
+                <span>
+                    ♥
+                </span>
+
+            </div>
+
 
         </div>
 
+
+        <!-- Botón -->
+
+        <button id="abrirInvitacion"
+                class="boton-abrir">
+
+            <span>
+                Abrir invitación
+            </span>
+
+            <i class="fa-solid fa-envelope-open"></i>
+
+        </button>
+
+
         <p class="instruccion">
-            Haz clic para abrir
+
+            Haz clic para comenzar
+
         </p>
+
 
     </section>
 
 
-    <!-- =====================================
-         INVITACIÓN
-    ====================================== -->
+    <!-- =========================================
+         INVITACIÓN COMPLETA
+    ========================================== -->
 
-    <main id="invitacion" class="invitacion">
-
-        <!-- Fondo decorativo -->
-        <div class="corazones"></div>
+    <main id="invitacion"
+          class="invitacion">
 
 
         <!-- =====================================
-             PORTADA
+             FONDO ANIMADO
         ====================================== -->
 
-        <section class="portada">
+        <div class="fondo-animado">
 
-            <div class="contenido-portada">
+            <div class="luz luz-1"></div>
 
-                <p class="pequeno aparecer">
-                    CON LA BENDICIÓN DE DIOS
-                </p>
+            <div class="luz luz-2"></div>
 
-                <h1 class="nombres aparecer">
-                    Julio
-                    <span>&</span>
-                    Brigida
-                </h1>
+            <div class="luz luz-3"></div>
 
-                <div class="linea aparecer"></div>
+        </div>
 
-                <p class="mensaje aparecer">
-                    Tenemos el honor de invitarte a compartir
-                    con nosotros uno de los días más importantes
-                    de nuestras vidas.
-                </p>
 
-                <div class="fecha-portada aparecer">
-                    <span>20</span>
-                    <div>
-                        <strong>DICIEMBRE</strong>
-                        <small>2026</small>
-                    </div>
+        <!-- =====================================
+             PÉTALOS
+        ====================================== -->
+
+        <div id="petalos"
+             class="petalos">
+
+        </div>
+
+
+        <!-- =====================================
+             HERO / PORTADA
+        ====================================== -->
+
+        <section class="hero">
+
+
+            <!-- Imagen de fondo -->
+
+            <div class="hero-fondo"></div>
+
+
+            <!-- Oscurecimiento -->
+
+            <div class="hero-overlay"></div>
+
+
+            <!-- Anillos grandes -->
+
+            <div class="anillos-hero">
+
+                <div class="anillo-grande anillo-novio">
+
+                    <span>
+                        J
+                    </span>
+
                 </div>
 
-                <p class="deslizar aparecer">
-                    Desliza hacia abajo
-                    <br>
-                    ↓
-                </p>
+                <div class="anillo-grande anillo-novia">
+
+                    <span>
+                        B
+                    </span>
+
+                </div>
 
             </div>
+
+
+            <!-- Contenido -->
+
+            <div class="hero-contenido">
+
+
+                <p class="texto-superior">
+
+                    CON LA BENDICIÓN DE DIOS
+
+                </p>
+
+
+                <div class="linea-decorativa">
+
+                    <span>♥</span>
+
+                </div>
+
+
+                <h1 class="nombres">
+
+                    <span class="nombre nombre-1">
+                        Julio
+                    </span>
+
+                    <span class="ampersand">
+                        &
+                    </span>
+
+                    <span class="nombre nombre-2">
+                        Brígida
+                    </span>
+
+                </h1>
+
+
+                <p class="texto-introduccion">
+
+                    Tenemos el honor de invitarte
+                    a compartir con nosotros
+                    el día más importante
+                    de nuestras vidas.
+
+                </p>
+
+
+                <div class="fecha">
+
+                    <div class="numero">
+
+                        03
+
+                    </div>
+
+
+                    <div class="fecha-texto">
+
+                        <strong>
+                            OCTUBRE
+                        </strong>
+
+                        <span>
+                            2026
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="flecha">
+
+                    <span>
+                        Desliza
+                    </span>
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                </div>
+
+
+            </div>
+
 
         </section>
 
@@ -121,19 +349,43 @@
 
         <section class="seccion frase">
 
+
             <div class="contenedor revelar">
 
-                <span class="adorno">♥</span>
 
-                <p class="frase-texto">
-                    "Donde hay amor, hay un hogar,
-                    y donde hay dos corazones,
-                    comienza una nueva historia."
+                <div class="decoracion-corazones">
+
+                    <span>♥</span>
+
+                    <span>♥</span>
+
+                    <span>♥</span>
+
+                </div>
+
+
+                <p class="frase-grande">
+
+                    "Dos corazones,
+                    una historia,
+                    un mismo destino."
+
                 </p>
 
-                <span class="adorno">♥</span>
+
+                <div class="linea-pequena"></div>
+
+
+                <p class="frase-pequena">
+
+                    Y queremos compartir
+                    este momento contigo.
+
+                </p>
+
 
             </div>
+
 
         </section>
 
@@ -144,39 +396,331 @@
 
         <section class="seccion cuenta">
 
+
             <div class="contenedor revelar">
 
+
                 <p class="subtitulo">
-                    FALTA POCO PARA NUESTRO GRAN DÍA
+                    NUESTRO GRAN DÍA
                 </p>
 
-                <h2>La cuenta regresiva</h2>
+
+                <h2>
+                    La cuenta regresiva
+                </h2>
+
 
                 <div class="contador">
 
-                    <div class="tiempo">
-                        <span id="dias">00</span>
-                        <small>DÍAS</small>
-                    </div>
 
                     <div class="tiempo">
-                        <span id="horas">00</span>
-                        <small>HORAS</small>
+
+                        <span id="dias">
+                            00
+                        </span>
+
+                        <small>
+                            DÍAS
+                        </small>
+
                     </div>
 
-                    <div class="tiempo">
-                        <span id="minutos">00</span>
-                        <small>MINUTOS</small>
+
+                    <div class="separador">
+                        :
                     </div>
 
+
                     <div class="tiempo">
-                        <span id="segundos">00</span>
-                        <small>SEGUNDOS</small>
+
+                        <span id="horas">
+                            00
+                        </span>
+
+                        <small>
+                            HORAS
+                        </small>
+
                     </div>
+
+
+                    <div class="separador">
+                        :
+                    </div>
+
+
+                    <div class="tiempo">
+
+                        <span id="minutos">
+                            00
+                        </span>
+
+                        <small>
+                            MINUTOS
+                        </small>
+
+                    </div>
+
+
+                    <div class="separador">
+                        :
+                    </div>
+
+
+                    <div class="tiempo">
+
+                        <span id="segundos">
+                            00
+                        </span>
+
+                        <small>
+                            SEGUNDOS
+                        </small>
+
+                    </div>
+
 
                 </div>
 
+
             </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             HISTORIA / FOTO
+        ====================================== -->
+
+        <section class="historia">
+
+
+            <div class="historia-imagen"></div>
+
+
+            <div class="historia-overlay"></div>
+
+
+            <div class="historia-contenido revelar">
+
+
+                <span class="numero-romano">
+                    I
+                </span>
+
+
+                <p class="subtitulo blanco">
+                    NUESTRA HISTORIA
+                </p>
+
+
+                <h2 class="blanco">
+                    El comienzo
+                </h2>
+
+
+                <p class="historia-texto">
+
+                    Cada historia de amor tiene
+                    un comienzo. La nuestra comenzó
+                    con una mirada, continuó con
+                    una sonrisa y hoy nos lleva
+                    hasta este momento.
+
+                </p>
+
+
+                <div class="corazon-pulsante">
+                    ♥
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             FOTOS
+        ====================================== -->
+
+        <section class="seccion galeria">
+
+
+            <div class="contenedor revelar">
+
+
+                <p class="subtitulo">
+                    RECUERDOS
+                </p>
+
+
+                <h2>
+                    Momentos de nuestra historia
+                </h2>
+
+
+                <div class="galeria-grid">
+
+
+                    <div class="foto-card foto-1">
+
+                        <div class="foto-numero">
+                            01
+                        </div>
+
+                    </div>
+
+
+                    <div class="foto-card foto-2">
+
+                        <div class="foto-numero">
+                            02
+                        </div>
+
+                    </div>
+
+
+                    <div class="foto-card foto-3">
+
+                        <div class="foto-numero">
+                            03
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="texto-fotos">
+
+                    Cada imagen guarda
+                    un pedacito de esta historia.
+
+                </p>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================
+             PADRINOS
+        ====================================== -->
+
+        <section class="seccion padrinos">
+
+
+            <div class="contenedor revelar">
+
+
+                <p class="subtitulo">
+                    CON CARIÑO Y GRATITUD
+                </p>
+
+
+                <h2>
+                    Nuestros padrinos
+                </h2>
+
+
+                <div class="padrinos-grid">
+
+
+                    <div class="padrino-card">
+
+                        <div class="padrino-icono">
+                            <i class="fa-solid fa-ring"></i>
+                        </div>
+
+                        <h3>
+                            Padrinos de matrimonio
+                        </h3>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                    </div>
+
+
+                    <div class="padrino-card">
+
+                        <div class="padrino-icono">
+                            <i class="fa-solid fa-dove"></i>
+                        </div>
+
+                        <h3>
+                            Padrinos de velación
+                        </h3>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                    </div>
+
+
+                    <div class="padrino-card">
+
+                        <div class="padrino-icono">
+                            <i class="fa-solid fa-infinity"></i>
+                        </div>
+
+                        <h3>
+                            Padrinos de lazo
+                        </h3>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                    </div>
+
+
+                    <div class="padrino-card">
+
+                        <div class="padrino-icono">
+                            <i class="fa-solid fa-coins"></i>
+                        </div>
+
+                        <h3>
+                            Padrinos de arras
+                        </h3>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                        <p>
+                            Nombre y Apellido
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
 
         </section>
 
@@ -185,35 +729,63 @@
              CEREMONIA
         ====================================== -->
 
-        <section class="seccion evento">
+        <section class="evento ceremonia">
 
-            <div class="contenedor revelar">
+
+            <div class="evento-fondo"></div>
+
+
+            <div class="evento-contenido revelar">
+
+
+                <div class="icono-evento">
+
+                    <i class="fa-solid fa-church"></i>
+
+                </div>
+
 
                 <p class="subtitulo">
                     CEREMONIA
                 </p>
 
-                <h2>El momento especial</h2>
 
-                <div class="icono">
-                    ⛪
+                <h2>
+                    El momento especial
+                </h2>
+
+
+                <div class="ornamento">
+                    ✦
                 </div>
 
-                <h3>Iglesia San Francisco</h3>
+
+                <h3>
+                    Iglesia San Francisco
+                </h3>
+
 
                 <p>
-                    20 de diciembre de 2026
+                    Sábado 3 de octubre
                 </p>
+
 
                 <p>
                     18:00 horas
                 </p>
 
+
                 <button class="boton">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
                     Ver ubicación
+
                 </button>
 
+
             </div>
+
 
         </section>
 
@@ -222,75 +794,113 @@
              RECEPCIÓN
         ====================================== -->
 
-        <section class="seccion recepcion">
+        <section class="evento recepcion">
 
-            <div class="contenedor revelar">
+
+            <div class="evento-fondo recepcion-fondo"></div>
+
+
+            <div class="evento-contenido revelar">
+
+
+                <div class="icono-evento">
+
+                    <i class="fa-solid fa-champagne-glasses"></i>
+
+                </div>
+
 
                 <p class="subtitulo">
                     RECEPCIÓN
                 </p>
 
-                <h2>Después de la ceremonia</h2>
 
-                <div class="icono">
-                    🥂
+                <h2>
+                    Celebremos juntos
+                </h2>
+
+
+                <div class="ornamento">
+                    ✦
                 </div>
 
-                <h3>Salón de Eventos "Los Rosales"</h3>
+
+                <h3>
+                    Salón de Eventos "Los Rosales"
+                </h3>
+
 
                 <p>
                     Av. Principal #123
                 </p>
 
+
                 <p>
                     20:00 horas
                 </p>
 
+
                 <button class="boton">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
                     Ver ubicación
+
                 </button>
 
+
             </div>
+
 
         </section>
 
 
         <!-- =====================================
-             GALERÍA
+             SEGUNDA FOTO
         ====================================== -->
 
-        <section class="seccion galeria">
+        <section class="foto-completa">
 
-            <div class="contenedor revelar">
 
-                <p class="subtitulo">
-                    NUESTRA HISTORIA
-                </p>
+            <div class="foto-completa-fondo"></div>
 
-                <h2>Momentos que recordaremos</h2>
 
-                <div class="fotos">
+            <div class="foto-completa-overlay"></div>
 
-                    <div class="foto foto1">
-                        <span>♥</span>
+
+            <div class="foto-completa-texto revelar">
+
+
+                <div class="anillos-flotantes">
+
+
+                    <div class="anillo-grande anillo-a">
+                        J
                     </div>
 
-                    <div class="foto foto2">
-                        <span>♥</span>
+
+                    <div class="anillo-grande anillo-v">
+                        B
                     </div>
 
-                    <div class="foto foto3">
-                        <span>♥</span>
-                    </div>
 
                 </div>
 
-                <p class="nota">
-                    Puedes reemplazar estos espacios por
-                    fotografías de los novios.
+
+                <p>
+                    JUNTOS PARA SIEMPRE
                 </p>
 
+
+                <h2>
+                    Nuestro
+                    <br>
+                    "Sí, acepto"
+                </h2>
+
+
             </div>
+
 
         </section>
 
@@ -301,26 +911,47 @@
 
         <section class="seccion confirmacion">
 
+
             <div class="contenedor revelar">
+
+
+                <div class="anillo-icono">
+
+                    💍
+
+                </div>
+
 
                 <p class="subtitulo">
                     TU PRESENCIA ES IMPORTANTE
                 </p>
 
-                <h2>¿Nos acompañas?</h2>
 
-                <p>
-                    Será un honor compartir este día
-                    tan especial contigo.
+                <h2>
+                    ¿Nos acompañas?
+                </h2>
+
+
+                <p class="confirmacion-texto">
+
+                    Será un honor celebrar
+                    este día tan especial
+                    junto a las personas
+                    que queremos.
+
                 </p>
 
-                <button id="confirmar" class="boton boton-grande">
-                    Confirmar asistencia
-                </button>
 
-                <p id="mensajeConfirmacion" class="confirmado"></p>
+                <p class="mensaje-confirmacion mensaje-confirmacion-fijo">
+
+                    <i class="fa-solid fa-heart"></i>
+                    ¡Sí, te esperamos!
+
+                </p>
+
 
             </div>
+
 
         </section>
 
@@ -331,36 +962,84 @@
 
         <section class="final">
 
-            <div class="contenido-final revelar">
 
-                <span>♥</span>
+            <div class="final-fondo"></div>
+
+
+            <div class="final-overlay"></div>
+
+
+            <div class="final-contenido revelar">
+
+
+                <div class="anillos-final">
+
+
+                    <div class="anillo-final anillo-final-1">
+
+                    </div>
+
+
+                    <div class="anillo-final anillo-final-2">
+
+                    </div>
+
+
+                </div>
+
+
+                <p class="final-pequeno">
+                    PARA SIEMPRE
+                </p>
+
 
                 <h2>
+
                     Julio
-                    <br>
-                    &
-                    <br>
-                    Brigida
+
+                    <span>
+                        &
+                    </span>
+
+                    Brígida
+
                 </h2>
+
+
+                <div class="linea-final"></div>
+
 
                 <p>
                     Gracias por formar parte
                     de nuestra historia.
                 </p>
 
-                <div class="anillos">
-                    💍
+
+                <div class="corazon-final">
+                    ♥
                 </div>
+
+
+                <p class="fecha-final">
+                    03 · 10 · 2026
+                </p>
+
 
             </div>
 
+
         </section>
+
 
     </main>
 
 
-    <!-- JavaScript -->
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
     <script src="script.js"></script>
+
 
 </body>
 
