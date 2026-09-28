@@ -1185,13 +1185,13 @@ body {
     font-weight: 600;
 
     text-shadow:
-        0 5px 25px rgba(0,0,0,.4);
+        0 5px 20px rgba(0,0,0,.4);
 }
 
 
 .nombre {
 
-    display: block;
+    display: center;
 
     background:
         linear-gradient(
